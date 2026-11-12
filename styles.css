@@ -1308,6 +1308,12 @@ button:focus-visible,
 a:focus-visible,
 [tabindex]:focus-visible { outline: 3px solid rgba(156,122,137,.42); outline-offset: 3px; }
 
+#vivo-internship { scroll-margin-top: 6rem; }
+.verification-flow { display: grid; gap: .75rem; margin: 0; padding: 1rem 1rem 1rem 2.75rem; }
+.verification-flow li { padding: .65rem; border: 1px solid #ded3ce; background: #faf7f3; }
+.experience-gallery-grid figure > a { display: block; }
+.experience-gallery-grid figure > a > span { display: block; padding: .75rem 1rem; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }

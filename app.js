@@ -508,13 +508,22 @@ function setLanguage(language) {
 }
 
 function showView(viewName, updateHash = true) {
+  const vivo = viewName === "vivo-internship";
+  if (vivo) viewName = "experience";
   const target = [...views].some((view) => view.dataset.view === viewName) ? viewName : "overview";
   resetScrollIntent();
   views.forEach((view) => view.classList.toggle("is-active", view.dataset.view === target));
   viewButtons.forEach((button) => button.classList.toggle("is-active", button.dataset.viewTarget === target));
   document.body.classList.remove("nav-open");
   menuButton.setAttribute("aria-expanded", "false");
-  if (updateHash) history.replaceState(null, "", target === "overview" ? "#overview" : `#${target}`);
+  if (updateHash) history.replaceState(null, "", vivo ? "#vivo-internship" : `#${target}`);
+  if (vivo) {
+    document.querySelector('[data-experience-target="internships"]').click();
+    const entry = document.getElementById("vivo-internship");
+    entry.focus({ preventScroll: true });
+    entry.scrollIntoView({ block: "start", behavior: "instant" });
+    return;
+  }
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
