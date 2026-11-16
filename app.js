@@ -23,6 +23,7 @@ const translations = {
     featuredTitle: "From product practice to an AI application",
     researchProject: "Research · Data science",
     productProject: "Product · AI application",
+    agentProject: "Product · AI agent",
     covidTitleShort: "COVID-19 surveillance and Rₜ estimation",
     covidPreview: "A reproducible GAM-SEIR study of how cases, deaths, reporting quality, and delay assumptions change time-varying reproduction number estimates.",
     ragTitleShort: "AI advertising feedback and review assistant",
@@ -62,9 +63,11 @@ const translations = {
     campusRecognitionTitle: "Recognition",
     campusRecognitionText: "Received first-class academic excellence scholarships for three consecutive years, plus social-practice and student-work awards.",
     projectsTitle: "From a precise question to an inspectable result.",
-    projectsIntro: "Each project is kept separate here: its own problem, method, evidence, and limits. Open a project to see the full reasoning and image gallery.",
+    projectsIntro: "Three projects are presented separately here: each has its own problem, method, evidence, and limits. Open a project to see the full reasoning and image gallery.",
     covidListText: "United Kingdom, Italy, and United States · R · GAM-SEIR · sensitivity analysis · official comparison",
     ragListText: "Next.js · FastAPI · SQLite · local retrieval · rules · model analysis · human review",
+    offerTitleShort: "Offer Compass · evidence-constrained job-search agent",
+    offerListText: "Python · SQLite · Application Graph · Word/PDF · evaluation · human approval",
     viewDetails: "View details",
     capabilitiesTitle: "The person behind the analysis.",
     capabilitiesIntro: "My work explains what I can do. These cards and chapters explain what keeps me curious, how I work with people, and where I want to go next.",
@@ -136,6 +139,14 @@ const translations = {
     ragApproach: "I defined 13 experience labels, designed single and CSV batch analysis, and combined local rule retrieval, deterministic checks, and model output. High-risk or low-confidence records enter a manual-review queue.",
     ragImplementation: "The product uses Next.js, FastAPI, and SQLite, with structured records, prompt and policy management, evaluation views, review history, and safeguards for evidence checks and sensitive data.",
     ragBoundary: "The current version is an independent demonstration using public rules, synthetic data, and user input. It does not connect to vivo systems or production data and does not automate enforcement decisions.",
+    offerDetailTitle: "Offer Compass · evidence-constrained job-search agent",
+    offerDetailLead: "An independent local agent that connects role discovery, fit assessment, evidence-grounded resume tailoring, and reviewable application packages.",
+    offerBackground: "Job descriptions, resumes, and application progress are usually scattered across different tools. Generic AI rewriting can also introduce unsupported claims and make changes difficult to trace.",
+    offerApproach: "I designed an Application Graph that links role discovery, resume evidence, critical questions, verified patches, application packages, and status history. Each run can pause, resume, and preserve its reasoning trail.",
+    offerImplementation: "The V5.5 prototype uses Python and SQLite, supports Word/PDF review, records tool calls and decisions, and separates safe form-field mapping from actions that require explicit user approval.",
+    offerEvidence: "A fixed nine-case regression suite covers role and city filtering, deduplication, evidence-backed packages, critical-gap pauses, safe field mapping, prompt-injection defence, history, and PII redaction. All nine baseline cases currently pass.",
+    offerWorkspaceCaption: "JD analysis, fit assessment, and application workflow",
+    offerReviewCaption: "Evidence-grounded resume changes with human review",
     ragOverviewCaption: "Project overview and risk distribution",
     ragSingleCaption: "Single-feedback analysis workflow",
     ragReviewCaption: "Human-review queue and decision record",
@@ -165,6 +176,7 @@ const translations = {
     featuredTitle: "从产品实践出发，把洞察做成 AI 应用",
     researchProject: "研究 · 数据科学",
     productProject: "产品 · AI 应用",
+    agentProject: "产品 · AI Agent",
     covidTitleShort: "COVID-19 监测与 Rₜ 估计",
     covidPreview: "基于 GAM-SEIR 的可复现研究，分析病例、死亡、报告质量和延迟假设如何影响时变再生数估计。",
     ragTitleShort: "AI 广告反馈分析与审核助手",
@@ -204,9 +216,11 @@ const translations = {
     campusRecognitionTitle: "奖学金与荣誉",
     campusRecognitionText: "连续三学年获得学业优秀奖学金一等奖，并获得社会实践奖和学生工作奖。",
     projectsTitle: "从明确的问题，到可检查的结果。",
-    projectsIntro: "两个项目分别呈现各自的问题、方法、证据和边界。点击项目可查看完整思路与对应图片。",
+    projectsIntro: "三个项目分别呈现各自的问题、方法、证据和边界。点击项目可查看完整思路与对应图片。",
     covidListText: "英国、意大利、美国 · R · GAM-SEIR · 敏感性分析 · 官方结果对照",
     ragListText: "Next.js · FastAPI · SQLite · 本地检索 · 规则 · 模型分析 · 人工复核",
+    offerTitleShort: "Offer Compass · 证据约束型求职 Agent",
+    offerListText: "Python · SQLite · Application Graph · Word/PDF · 评测 · 人工确认",
     viewDetails: "查看详情",
     capabilitiesTitle: "分析工作之外，更完整的我。",
     capabilitiesIntro: "项目说明我能够做什么，而这些卡牌和章节记录了我的好奇心、与人相处的方式，以及我想继续前往的方向。",
@@ -278,6 +292,14 @@ const translations = {
     ragApproach: "定义 13 类体验标签，设计单条与 CSV 批量分析，并结合本地规则检索、确定性检查和模型输出。高风险或低置信度记录进入人工复核队列。",
     ragImplementation: "产品使用 Next.js、FastAPI 与 SQLite，实现结构化记录、Prompt 与规则管理、评测视图、复核历史，以及证据核对和敏感信息检查。",
     ragBoundary: "当前版本使用公开规则、合成数据和用户输入进行独立演示，不接入 vivo 内部系统或生产数据，也不会自动执行处罚决策。",
+    offerDetailTitle: "Offer Compass · 证据约束型求职 Agent",
+    offerDetailLead: "一个本地运行的独立 Agent，将岗位发现、匹配判断、基于证据的简历调整与可审阅的投递材料连接起来。",
+    offerBackground: "岗位信息、个人简历和投递进度通常分散在不同工具中；泛化式 AI 改写还可能加入简历中没有的事实，使修改依据难以追溯。",
+    offerApproach: "我设计了 Application Graph，将岗位发现、简历证据、关键追问、已验证修改、投递材料包和状态历史连接起来。每次运行都可暂停、恢复，并保留判断链路。",
+    offerImplementation: "V5.5 原型使用 Python 与 SQLite，支持 Word/PDF 审阅，记录工具调用与决策，并把安全的表单字段映射和必须由用户明确确认的操作分开。",
+    offerEvidence: "固定的 9 项回归评测覆盖岗位与城市筛选、去重、证据化材料包、信息缺口暂停、安全字段映射、提示词注入防护、历史记录和隐私信息脱敏；当前 9 项基线用例全部通过。",
+    offerWorkspaceCaption: "JD 分析、匹配判断与投递工作流",
+    offerReviewCaption: "基于简历证据、支持人工审阅的修改界面",
     ragOverviewCaption: "项目概览与风险分布",
     ragSingleCaption: "单条反馈分析流程",
     ragReviewCaption: "人工复核队列与决策记录",
@@ -446,6 +468,34 @@ Object.assign(translations.zh, {
 
 translations.zh.experienceTitle = "从用户信号与业务约束出发，完成可落地的产品实践。";
 
+const travelCollections = [
+  { slug: "yunnan", zh: "云南", en: "Yunnan", count: 5, zhIntro: "在云南，时间像被山风放慢。花枝、湖水与古城的光影，让旅途保留着温柔而松弛的呼吸。", enIntro: "In Yunnan, time seems to slow with the mountain breeze. Blossoms, lakes, and old-town light leave the journey with a gentle, unhurried rhythm." },
+  { slug: "taiwan", zh: "台湾", en: "Taiwan", count: 5, zhIntro: "从海岸线到日常街巷，台湾的亲切藏在细小的生活场景里。每一次转身，都像遇见一段熟悉又新鲜的故事。", enIntro: "From the coastline to everyday streets, Taiwan's warmth lives in small details. Each turn feels like meeting a story that is both familiar and new." },
+  { slug: "hong-kong", zh: "香港", en: "Hong Kong", count: 5, zhIntro: "高楼、海港与霓虹把香港压缩成鲜明的节奏。密集的城市表面之下，也总能找到属于行人的片刻停顿。", enIntro: "Towers, harbour, and neon compress Hong Kong into a vivid rhythm. Beneath its dense surface, there is always a pause waiting for the passer-by." },
+  { slug: "seoul", zh: "首尔", en: "Seoul", count: 5, zhIntro: "首尔在传统与流行之间自然切换。宫墙、街景与年轻的表达，共同构成一座始终向前的城市。", enIntro: "Seoul moves naturally between tradition and pop culture. Palace walls, street scenes, and youthful expression shape a city always looking forward." },
+  { slug: "malaysia", zh: "马来西亚", en: "Malaysia", count: 5, zhIntro: "热带的光线让颜色变得更饱满，也让人与城市靠得更近。这里的旅途，是多种文化在日常里自然相遇。", enIntro: "Tropical light makes every colour fuller and brings people closer to the city. Here, different cultures meet naturally in everyday life." },
+  { slug: "singapore", zh: "新加坡", en: "Singapore", count: 5, zhIntro: "整洁的秩序之外，新加坡也有热烈的夜色与轻松的朋友时刻。城市的理性和生活的温度，在这里并行不悖。", enIntro: "Beyond its precise order, Singapore holds bright nights and easy moments with friends. Urban logic and everyday warmth live comfortably side by side." },
+  { slug: "united-kingdom", zh: "英国", en: "United Kingdom", count: 5, zhIntro: "阴晴不断变化，旧建筑与校园生活却保持着稳定的节奏。英国教会我在克制的色彩里，看见时间留下的层次。", enIntro: "Weather shifts constantly, while old buildings and campus life keep a steady rhythm. Britain taught me to notice the layers of time in restrained colours." },
+  { slug: "paris", zh: "巴黎", en: "Paris", count: 5, zhIntro: "巴黎的魅力不只属于地标，也藏在街角、橱窗与匆匆经过的人群里。它让日常本身也拥有被观看的理由。", enIntro: "Paris belongs not only to its landmarks, but also to corners, windows, and passing crowds. It gives everyday life a reason to be observed." },
+  { slug: "southern-france", zh: "南法", en: "Southern France", count: 5, zhIntro: "南法的阳光把山城、海岸与屋顶染成温暖的层次。风从海面吹来，旅途也因此有了松弛而明亮的序章。", enIntro: "Southern French light warms hill towns, coastlines, and tiled roofs. With wind arriving from the sea, the journey opens on a relaxed and luminous note." },
+  { slug: "barcelona", zh: "巴塞罗那", en: "Barcelona", count: 5, zhIntro: "建筑在巴塞罗那不只是背景，更像城市大胆想象力的延伸。曲线、色彩与海风，让漫步本身成为一种观看方式。", enIntro: "In Barcelona, architecture is not a backdrop but an extension of the city's imagination. Curves, colour, and sea air turn walking into a way of seeing." },
+  { slug: "madrid", zh: "马德里", en: "Madrid", count: 5, zhIntro: "马德里的开阔来自广场，也来自人们自在的生活方式。白昼与夜晚在这里相接，城市始终保持着充沛的能量。", enIntro: "Madrid feels open through both its plazas and its easy way of life. Day flows into night while the city keeps an unmistakable energy." },
+  { slug: "tenerife", zh: "特内里费", en: "Tenerife", count: 5, zhIntro: "火山、海洋与辽阔天空构成了特内里费的尺度。站在自然面前，许多复杂的想法会重新变得简单。", enIntro: "Volcano, ocean, and open sky define Tenerife's scale. In front of that landscape, complicated thoughts become simple again." },
+  { slug: "milan", zh: "米兰", en: "Milan", count: 5, zhIntro: "米兰把宏伟建筑与现代生活放在同一条街道上。穹顶、城堡与公园的午后，让这座城市在精致之外也显得从容。", enIntro: "Milan places monumental architecture beside modern life on the same street. Domes, castles, and afternoons in the park reveal ease beneath its polish." },
+  { slug: "venice", zh: "威尼斯", en: "Venice", count: 5, zhIntro: "水面重新定义了威尼斯的道路，也重新安排了观看城市的速度。倒影、窄巷与桥，让每一次迷路都值得。", enIntro: "Water redraws Venice's streets and changes the pace of looking. Reflections, narrow lanes, and bridges make every wrong turn worthwhile." },
+  { slug: "florence", zh: "佛罗伦萨", en: "Florence", count: 5, zhIntro: "佛罗伦萨像一座可以步行阅读的艺术史。石墙、穹顶与夕阳叠在一起，让古老依然拥有鲜活的温度。", enIntro: "Florence reads like an art history written for walking. Stone walls, domes, and evening light keep the ancient city vividly alive." },
+  { slug: "rome", zh: "罗马", en: "Rome", count: 5, zhIntro: "在罗马，遗迹不是被封存的过去，而是日常生活的一部分。时间层层叠加，却没有让这座城市失去活力。", enIntro: "In Rome, ruins are not sealed-off history but part of daily life. Time gathers in layers without taking away the city's vitality." },
+  { slug: "southern-italy", zh: "南意", en: "Southern Italy", count: 5, zhIntro: "南意的颜色更浓，海风也更直接。街巷、山城与餐桌上的热气，让旅行回到具体而真切的生活。", enIntro: "Southern Italy carries deeper colours and a more direct sea breeze. Streets, hill towns, and lively tables return travel to something tangible and real." },
+  { slug: "vienna", zh: "维也纳", en: "Vienna", count: 5, zhIntro: "维也纳的秩序里保留着音乐般的起伏。宫殿、街道与咖啡馆，让缓慢成为理解城市的一种方法。", enIntro: "Vienna's order still rises and falls like music. Palaces, streets, and cafés make slowness a way of understanding the city." },
+  { slug: "switzerland", zh: "瑞士", en: "Switzerland", count: 5, zhIntro: "湖泊、山脉与小镇之间，瑞士把辽阔和精确放在同一幅画面里。风景安静，却足以让人停留很久。", enIntro: "Between lakes, mountains, and towns, Switzerland holds vastness and precision in one frame. The scenery is quiet, yet asks you to linger." },
+  { slug: "norway", zh: "挪威", en: "Norway", count: 5, zhIntro: "挪威的光线冷静而清澈，峡湾与远山把人的尺度缩得很小。正因如此，旅途显得更加自由。", enIntro: "Norwegian light is cool and clear, while fjords and distant mountains make the human scale feel small. That is exactly what makes the journey freeing." }
+];
+
+const travelCopy = {
+  zh: { kicker: "旅行片段", intro: "用几张照片，留下一段地方的光线、建筑与生活细节。", image: "旅行照片", position: "目的地" },
+  en: { kicker: "TRAVEL FRAGMENTS", intro: "A few frames preserving the light, architecture, and everyday details of a place.", image: " travel photo", position: "DESTINATION" }
+};
+
 const languageButtons = document.querySelectorAll("[data-language]");
 const viewButtons = document.querySelectorAll("[data-view-target]");
 const views = document.querySelectorAll("[data-view]");
@@ -467,6 +517,8 @@ const experiencePanels = document.querySelectorAll("[data-experience-panel]");
 const scrollFeedback = document.querySelector(".scroll-feedback");
 const scrollFeedbackText = scrollFeedback.querySelector("[data-scroll-feedback-text]");
 const scrollFeedbackArrow = scrollFeedback.querySelector("[data-scroll-feedback-arrow]");
+const travelTabs = document.querySelector("[data-travel-tabs]");
+const travelSpread = document.querySelector("[data-travel-spread]");
 const projectCarousel = document.querySelector(".project-carousel");
 const projectSlides = [...document.querySelectorAll("[data-project-slide]")];
 const detailGalleryControllers = new Map();
@@ -475,6 +527,7 @@ let activeLanguage = localStorage.getItem("portfolio-language") || "en";
 let zoom = 1;
 let fitMode = true;
 let currentCardIndex = 0;
+let activeTravelIndex = 5;
 let scrollGestureCount = 0;
 let lastScrollDirection = 0;
 let lastScrollGestureAt = 0;
@@ -490,6 +543,41 @@ function renderPersonalityCard() {
   personalityCard.querySelector("[data-card-story]").textContent = card.story;
 }
 
+function travelPhotoMarkup(collection, photoIndex, className) {
+  if (photoIndex >= collection.count) return "";
+  const number = String(photoIndex + 1).padStart(2, "0");
+  const base = `assets/photos/travel/${collection.slug}/${number}`;
+  const name = collection[activeLanguage];
+  const sizes = className === "travel-photo-lead" ? "(max-width: 680px) 100vw, 42vw" : "(max-width: 680px) 50vw, 22vw";
+  return `<figure class="travel-photo ${className}"><img src="${base}-960.webp" srcset="${base}-480.webp 480w, ${base}-960.webp 960w, ${base}-1600.webp 1600w" sizes="${sizes}" alt="${name}${travelCopy[activeLanguage].image} ${photoIndex + 1}" loading="eager" decoding="async"${photoIndex === 0 ? ' fetchpriority="high"' : ""}><figcaption>${number}</figcaption></figure>`;
+}
+
+function renderTravelGallery() {
+  if (!travelTabs || !travelSpread) return;
+  const collection = travelCollections[activeTravelIndex];
+  const copy = travelCopy[activeLanguage];
+  travelTabs.innerHTML = travelCollections.map((item, index) => `<button type="button" role="tab" aria-selected="${index === activeTravelIndex}" class="${index === activeTravelIndex ? "is-active" : ""}" data-travel-index="${index}"><span>${String(index + 1).padStart(2, "0")}</span>${item[activeLanguage]}</button>`).join("");
+  const paired = [3, 4].filter((index) => index < collection.count).map((index) => travelPhotoMarkup(collection, index, "travel-photo-paired")).join("");
+  const intro = collection[`${activeLanguage}Intro`] || copy.intro;
+  travelSpread.innerHTML = `${travelPhotoMarkup(collection, 0, "travel-photo-lead")}<div class="travel-spread-copy"><span>${copy.position} · ${String(activeTravelIndex + 1).padStart(2, "0")} / ${travelCollections.length}</span><p>${copy.kicker}</p><h3>${collection[activeLanguage]}</h3><div>${intro}</div></div>${travelPhotoMarkup(collection, 1, "travel-photo-detail-one")}${travelPhotoMarkup(collection, 2, "travel-photo-detail-two")}${paired ? `<div class="travel-photo-pair${collection.count === 4 ? " is-single" : ""}">${paired}</div>` : ""}`;
+  travelTabs.querySelectorAll("[data-travel-index]").forEach((button) => {
+    button.addEventListener("click", () => {
+      activeTravelIndex = Number(button.dataset.travelIndex);
+      renderTravelGallery();
+      travelTabs.querySelector(".is-active")?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    });
+  });
+  travelSpread.querySelectorAll("img").forEach(bindExpandableImage);
+}
+
+travelTabs?.addEventListener("keydown", (event) => {
+  if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+  event.preventDefault();
+  activeTravelIndex = (activeTravelIndex + (event.key === "ArrowRight" ? 1 : -1) + travelCollections.length) % travelCollections.length;
+  renderTravelGallery();
+  travelTabs.querySelector(".is-active")?.focus();
+});
+
 function setLanguage(language) {
   activeLanguage = language;
   document.documentElement.lang = language;
@@ -504,6 +592,7 @@ function setLanguage(language) {
   languageButtons.forEach((button) => button.classList.toggle("is-active", button.dataset.language === language));
   localStorage.setItem("portfolio-language", language);
   renderPersonalityCard();
+  renderTravelGallery();
   detailGalleryControllers.forEach((controller) => controller.sync());
 }
 
@@ -568,6 +657,15 @@ function openLightbox(source, alt, caption = "") {
   fitMode = true;
   lightbox.showModal();
   lightboxImage.addEventListener("load", applyZoom, { once: true });
+}
+
+function bindExpandableImage(image) {
+  image.tabIndex = 0;
+  image.setAttribute("role", "button");
+  image.setAttribute("aria-label", `Expand image: ${image.alt}`);
+  const open = () => openLightbox(image.currentSrc || image.src, image.alt);
+  image.addEventListener("click", open);
+  image.addEventListener("keydown", (event) => { if (event.key === "Enter" || event.key === " ") open(); });
 }
 
 function bindHorizontalSwipe(element, onSwipeLeft, onSwipeRight) {
@@ -701,10 +799,16 @@ function initializeCampusGallery(gallery) {
   let dots = [];
   const goTo = (target) => {
     index = (target + slides.length) % slides.length;
+    const previousIndex = (index - 1 + slides.length) % slides.length;
+    const nextIndex = (index + 1) % slides.length;
     slides.forEach((slide, slideIndex) => {
       const active = slideIndex === index;
+      const before = slideIndex === previousIndex;
+      const after = slideIndex === nextIndex;
       slide.classList.toggle("is-active", active);
-      slide.setAttribute("aria-hidden", String(!active));
+      slide.classList.toggle("is-side-before", before);
+      slide.classList.toggle("is-side-after", after);
+      slide.setAttribute("aria-hidden", String(!(active || before || after)));
     });
     dots.forEach((dot, dotIndex) => {
       dot.classList.toggle("is-active", dotIndex === index);
@@ -795,12 +899,7 @@ document.querySelectorAll("[data-lightbox-src]").forEach((button) => {
 
 document.querySelectorAll("main img:not(.overview-portrait)").forEach((image) => {
   if (image.closest("[data-project-slide]")) return;
-  image.tabIndex = 0;
-  image.setAttribute("role", "button");
-  image.setAttribute("aria-label", `Expand image: ${image.alt}`);
-  const open = () => openLightbox(image.currentSrc || image.src, image.alt);
-  image.addEventListener("click", open);
-  image.addEventListener("keydown", (event) => { if (event.key === "Enter" || event.key === " ") open(); });
+  bindExpandableImage(image);
 });
 
 lightbox.querySelector(".lightbox-close").addEventListener("click", () => lightbox.close());
